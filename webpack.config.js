@@ -9,7 +9,6 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    writeToDisk: true,
   },
   resolve: {
     extensions: ['.js', '.jsx'],
