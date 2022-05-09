@@ -1,7 +1,13 @@
 body {
-	font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 button {
-	cursor: pointer;
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  img:not(.carousel__image) {
+    filter: invert(100%);
+  }
 }
