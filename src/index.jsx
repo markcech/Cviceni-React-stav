@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import './style.css'
 import { Uloha1 } from './Uloha1'
 import { Uloha2 } from './Uloha2'
@@ -14,7 +14,7 @@ import { ZaverecnyBonus2 } from './ZaverecnyBonus2'
 import { ZaverecnyBonus3 } from './ZaverecnyBonus3'
 import { ZaverecnyBonus4 } from './ZaverecnyBonus4'
 
-render(
+const App = () => (
 	<div className='container'>
 		<h1>React stav</h1>
 		<h2>Úloha 1</h2>
@@ -41,6 +41,7 @@ render(
 		<ZaverecnyBonus3 />
 		<h2>Závěrečný bonus 4</h2>
 		<ZaverecnyBonus4 />
-	</div>,
-	document.querySelector('#app'),
+	</div>
 )
+
+createRoot(document.querySelector('#app')).render(<App />)
