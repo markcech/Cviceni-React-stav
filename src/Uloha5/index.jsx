@@ -15,7 +15,11 @@ export const Uloha5 = () => {
 
   return (
     <>
-      <button className="hamburger" aria-label="menu" onClick={handleClick}>
+      <button
+        className={openMenu ? "hamburger hamburger--otevrene" : "hamburger"}
+        aria-label="menu"
+        onClick={handleClick}
+      >
         <span></span>
         <span></span>
         <span></span>
